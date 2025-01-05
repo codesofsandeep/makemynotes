@@ -1,0 +1,256 @@
+/* Main Container */
+.main-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+.dark-mode .main-div {
+    border: 1px solid white;
+}
+
+/* Note Header */
+.note-head>h1>span {
+    color: #26a0da;
+}
+
+.note-head {
+    text-align: left;
+    margin: 5px;
+}
+
+/* Child Div */
+.child-div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: fixed;
+    top: 40px;
+    left: 130px;
+    z-index: 1000;
+}
+
+/* Cards Div */
+.cards-div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 80%;
+    gap: 10px;
+}
+
+/* Note Content Div */
+.note-content-div {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.dark-mode .note-content-div {
+    border: 1px solid white;
+}
+
+/* Note Title */
+.note-div {
+    font-weight: bold;
+    font-size: 25px;
+    padding: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Note Content */
+.content-div {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 8px;
+    padding-top: 20px;
+    width: 500px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Buttons Div */
+.btns-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    position: relative;
+    top: -80px;
+    left: 66%;
+    gap: 10px;
+    padding: 10px;
+    margin-top: -18px;
+}
+
+.btns-div>button {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: transparent;
+    filter: grayscale(100%);
+    transition: border 0.3s ease;
+}
+
+.btns-div>button:hover {
+    filter: grayscale(0%);
+    border: 1px solid white;
+}
+
+/* Date Div */
+.date-div {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: -2%;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+}
+
+/* Option Div */
+.option-div {
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 5px;
+}
+
+.option-div>div {
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 5px #eee;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.option-div>div:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Warning Note Div */
+.warning-note-div {
+    text-align: center;
+    color: red;
+}
+
+/* Share Section */
+.share-para {
+    margin-top: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+.share-div {
+    position: fixed;
+    top: 220px;
+    left: 29%;
+    background: rgb(241, 240, 240);
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 5px;
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.share-div button {
+    display: block;
+    margin: 5px 0;
+    background: transparent;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.share-div button:hover {
+    filter: grayscale(1%);
+    background-color: #e0e0e0;
+}
+
+/* Responsive CSS */
+
+/* Tablet Screens (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main-div {
+        width: 85%;
+        margin-left: 7.5%;
+    }
+
+    .cards-div {
+        width: 90%;
+    }
+
+    .content-div {
+        width: 100%;
+    }
+
+    .btns-div {
+        width: 20%;
+        gap: 8px;
+        top: -70px;
+        left: 60%;
+    }
+
+    .share-div {
+        width: 60%;
+        left: 20%;
+    }
+}
+
+/* Small Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .main-div {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .cards-div {
+        width: 100%;
+    }
+
+    .content-div {
+        width: 100%;
+    }
+
+    .btns-div {
+        width: 50%;
+        gap: 5px;
+        top: -50px;
+        left: 40%;
+    }
+
+    .share-div {
+        width: 80%;
+        left: 10%;
+    }
+}

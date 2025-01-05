@@ -1,0 +1,432 @@
+Home Css .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.div-conatainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid  green; */
+}
+
+.textarea-container {
+    /* border: 2px solid red; */
+    margin-left: 25%;
+}
+
+.select-container {
+    width: 150px;
+    height: 35px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.select-container:hover {
+    border: 1px solid skyblue;
+    background-color: rgb(250, 246, 246);
+}
+
+
+.ai-btn {
+    background-image: linear-gradient(to right, #485563 0%, #29323c 51%, #485563 100%)
+}
+
+.ai-btn {
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border: none;
+    border-radius: 10px;
+}
+
+.ai-btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.create-inpt {
+    width: 700px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* color: grey; */
+    font-size: 14px;
+    margin-left: 70px;
+}
+
+.dark .create-inpt {
+    color: black;
+}
+
+
+
+/* .create-btn {
+    width: 150px;
+    padding: 10px;
+    margin: 0px 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(228, 242, 248);
+}
+ */
+
+
+.create-btn {
+    background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6 51%, #2BC0E4 100%)
+}
+
+.create-btn {
+    margin: 0px 15px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 15px #eee;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.create-btn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.note-textarea {
+    width: 100%;
+    height: 420px;
+    margin-top: 20px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 17px;
+    resize: vertical;
+    /* Allows vertical resizing of the textarea */
+    white-space: pre-wrap;
+    /* Ensures text wrapping and breaks the lines when 'Enter' is pressed */
+    word-wrap: break-word;
+}
+
+.textarea-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    /* Adjust as needed */
+}
+
+.textarea-wrapper {
+    position: relative;
+}
+
+.option-tag {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 1;
+    white-space: nowrap;
+    /* Prevent wrapping */
+    margin: 0;
+    display: inline-block;
+    /* Make tags align inline */
+}
+
+
+.public-tag {
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%)
+}
+
+.public-tag {
+    margin-right: -70px;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 13px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 15px #eee;
+    border-radius: 5px;
+    display: block;
+}
+
+.public-tag:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.category-tag {
+    background-image: linear-gradient(to right, #403B4A 0%, #E7E9BB 51%, #403B4A 100%)
+}
+
+.category-tag {
+    margin-right: -70px;
+    margin-top: 40px;
+    padding: 5px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 15px #eee;
+    border-radius: 5px;
+    display: block;
+    font-size: 13px;
+}
+
+.category-tag:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+
+    /* Main Container */
+    .main-container {
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    /* Div Container */
+    .div-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    /* Textarea Container */
+    .textarea-container {
+        margin-left: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Select Dropdowns */
+    .select-container {
+        width: 30%;
+        margin: 5px 0;
+        font-size: 12px;
+        padding: 8px;
+        margin: 5px;
+        
+    }
+
+    /* AI Button */
+    .ai-btn {
+        width: 30%;
+        padding: 12px;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    /* Create Note Input */
+    .create-inpt {
+        width: 100%;
+        padding: 12px;
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    /* Create Button */
+    .create-btn {
+        width: 30%;
+        padding: 12px;
+        margin-top: 15px;
+        margin-left: 32%;
+        font-size: 16px;
+    }
+
+    /* Textarea */
+    .note-textarea {
+        width: 100%;
+        height: 300px;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    /* Option Tags */
+    .option-tag {
+        font-size: 14px;
+        position: static;
+        display: inline-block;
+        margin: 5px;
+    }
+
+    /* Public Tag */
+    .public-tag,
+    .category-tag {
+        font-size: 12px;
+        padding: 10px;
+        margin-top: 10px;
+        width: 10%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Main Container */
+    .main-container {
+        flex-direction: column;
+        margin-top: 30px;
+        padding: 15px;
+        align-items: center;
+    }
+
+    /* Div Container */
+    .div-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    /* Textarea Container */
+    .textarea-container {
+        margin-left: 0;
+        width: 80%;
+        padding: 0 10px;
+    }
+
+    /* Select Dropdowns */
+    .select-container {
+        width: 100px;
+        height: 40px;
+        margin: 10px;
+        border: 1px solid black;
+        border-radius: 8px;
+        font-size: 13px;
+        padding: 6px;
+    }
+
+    .select-container:hover {
+        border: 1px solid skyblue;
+        background-color: rgb(250, 246, 246);
+    }
+
+    /* AI Button */
+    .ai-btn {
+        width: 30%;
+        padding: 12px;
+        font-size: 14px;
+        margin: 10px ;
+    }
+
+    /* Create Note Input */
+    .create-inpt {
+        width: 70%;
+        padding: 12px;
+        margin-left: 0;
+        font-size: 14px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    .dark .create-inpt {
+        color: black;
+    }
+
+    /* Create Button */
+    .create-btn {
+        width: 20%;
+        padding: 12px;
+        margin: 10px ;
+        font-size: 14px;
+        text-align: center;
+        background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6 51%, #2BC0E4 100%);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        transition: 0.5s;
+    }
+
+    .create-btn:hover {
+        background-position: right center;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Textarea */
+    .note-textarea {
+        width: 80%;
+        height: 350px;
+        padding: 12px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    /* Option Tags */
+    .option-tag {
+        font-size: 12px;
+        position: static;
+        display: inline-block;
+        margin: 5px;
+    }
+
+    /* Public Tag */
+    .public-tag {
+        font-size: 12px;
+        padding: 8px;
+        margin-top: 10px;
+        width: 15%;
+        text-align: center;
+        background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+        color: white;
+        border-radius: 5px;
+    }
+
+    .public-tag:hover {
+        background-position: right center;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Category Tag */
+    .category-tag {
+        font-size: 12px;
+        padding: 8px;
+        margin-top: 15px;
+        width: 15%;
+        text-align: center;
+        background-image: linear-gradient(to right, #403B4A 0%, #E7E9BB 51%, #403B4A 100%);
+        color: white;
+        border-radius: 5px;
+    }
+
+    .category-tag:hover {
+        background-position: right center;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+

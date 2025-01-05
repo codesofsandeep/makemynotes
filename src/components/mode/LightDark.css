@@ -1,0 +1,55 @@
+/* styles.css */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar_div {
+    /* padding: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-link {
+    text-decoration: none;
+    margin: 0 1rem;
+    color: inherit;
+    /* Use current text color */
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.toggle-button {
+    padding: 5px;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    /* border-radius: 5px; */
+
+}
+
+/* .toggle-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+} */
+
+/* Dark and light mode specific styles */
+.light .nav-link {
+    color: #333;
+}
+
+.dark .nav-link {
+    color: #ddd;
+}
+
+.dark .create-inpt {
+    color: black;
+}
