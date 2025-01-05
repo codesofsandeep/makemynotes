@@ -27,7 +27,8 @@ Currently, two official plugins are available:
 ***
 ### Screenshots
 
-![Light Mode](/assets/image/Light Mode.png "Light Mode")
+![Light Mode]("assets/image/Light Mode.png" "Light Mode")
+
 ![Dark Mode](/assets/image/Dark Mode.png "Dark Mode")
 ![All Notes](/assets/image/All Notes.png "All Notes")
 ![view notes](/assets/image/view notes.png "view notes")
