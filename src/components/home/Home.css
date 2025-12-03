@@ -68,9 +68,10 @@ Home Css .main-container {
     margin-left: 70px;
 }
 
-.dark .create-inpt {
-    color: black;
+:root.dark .create-inpt {
+    color: black !important;
 }
+
 
 
 
