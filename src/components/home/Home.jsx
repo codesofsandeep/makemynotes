@@ -162,7 +162,7 @@ const Home = () => {
                 onChange={(e) => setValue(e.target.value)}
                 cols={20}
                 rows={18}
-                placeholder="Enter your note here here"
+                placeholder="Enter your note here "
               ></textarea>
 
             </div>
