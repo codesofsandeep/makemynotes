@@ -68,9 +68,15 @@ Home Css .main-container {
     margin-left: 70px;
 }
 
-:root.dark .create-inpt {
+.dark .create-inpt {
+    color: black !important;
+    caret-color: black !important; /* cursor color */
+}
+
+.dark .create-inpt::placeholder {
     color: black !important;
 }
+
 
 
 
