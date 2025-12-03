@@ -68,12 +68,12 @@ Home Css .main-container {
     margin-left: 70px;
 }
 
-.dark .create-inpt {
+.dark-mode .create-inpt {
     color: black !important;
-    caret-color: black !important; /* cursor color */
+    caret-color: black !important;
 }
 
-.dark .create-inpt::placeholder {
+.dark-mode .create-inpt::placeholder {
     color: black !important;
 }
 
